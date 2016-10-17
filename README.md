@@ -1,9 +1,11 @@
-Code used for benchmarking of the two-state model simulated using Gillespie or the Poisson sampler (Psampler) siumlation method described in Lenive et al 2016 (Inferring extrinsic noise from single-cell gene expression data using approximate Bayesian computation).
-Please note that this is intended as a benchmark only and is not a stand-alone tool in it's current version.
+Code used for benchmarking of the two-state model simulated using the Gillespie algorithm or the siumlation method described in Lenive et al 2016 (Inferring extrinsic noise from single-cell gene expression data using approximate Bayesian computation).
+Please note that this implementation of the algorithm is intended as a benchmark only and is not a stand-alone tool.
 An example file containing model parameters is found in the data directory.  The path to this file is currently hard-coded.
 
 To run the benchmark:
+
 make
+
 ./benchmark.exe
 
 Depends on a C++ compiler and libgsl for random number generation (see Makefile).
